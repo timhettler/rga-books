@@ -73,10 +73,10 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">R/GA Books</h1>
         </header>
-        <main>
-          {isSignedIn === true && <button onClick={this.handleSignoutRequest}>Sign Out</button>}
+        <main className="App-main">
           {isSignedIn === false && <button onClick={this.handleAuthRequest}>Sign In</button>}
-          {data.map(book => (<div key={book.id}>{book.title}</div>))}
+          {data.map((book, index) => (<p key={book.id || index}>{book.title}</p>))}
+          {isSignedIn === true && <button onClick={this.handleSignoutRequest}>Sign Out</button>}
         </main>
       </div>
     );
