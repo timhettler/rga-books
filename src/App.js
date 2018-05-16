@@ -109,7 +109,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">R/GA Books</h1>
+          <h1 className="App-title">R/GA 🔥erature</h1>
         </header>
         <main className="App-main">
           {isSignedIn === false && (
